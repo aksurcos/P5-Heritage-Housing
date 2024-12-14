@@ -2,6 +2,10 @@ import streamlit as st
 from app_pages.multipage import MultiPage
 
 # Load Pages Scripts
+st.set_page_config(
+    page_title="Heritage House Project",
+    page_icon="🏚️"
+)
 
 from app_pages.summary_page import summary_page_body
 from app_pages.hypothesis_page import hypothesis_page_body
