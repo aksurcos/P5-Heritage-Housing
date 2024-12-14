@@ -1,29 +1,18 @@
 import streamlit as st
 
-def hypothesis_page_body():
+def hypothesis_page_body():   
 
-    st.write("Welcome to the *Heritage House Project!* :house:")
+    st.write("### Project Hypothesis and Validation :pencil:")
+    st.success(    
+        f"**Hypothesis 1:** We suspect properties with greater Overall Quality will be priced higher.\n\n"
+        f"* **Hypothesis validation:** The first hypothesis argument is supported by the fact of correlation analysis that homes with greater Overall Quality typically have higher sale prices.\n\n"
+        f"**Hypothesis 2:** We suspect properties with larger spaces will be priced higher.\n\n"
+        f"* **Hypothesis validation:** The correlation study between SalePrice and space variables supports this.\n\n"
+        f"**Hypothesis 3:** We suspect the more recent the year of construction, the higher the sale price tends to be.\n\n"
+        f"* **Hypothesis validation:** The correlation study between SalePrice and YearBuilt supports this.\n\n"
+        
+    )
 
-    st.write(
-            "- **YearBuilt**: Original construction date\n"
-            "- **TotalBsmtSF**: Total square feet of basement area\n"
-            "- **GrLivArea**: Above grade (ground) living area square feet\n"
-            "- **OverallQual**: Rates the overall material and finish of the house\n"
-            "   - 10: Very Excellent\n"
-            "   - 9: Excellent\n"
-            "   - 8: Very Good\n"
-            "   - 7: Good\n"
-            "   - 6: Above Average\n"
-            "   - 5: Average\n"
-            "   - 4: Below Average\n"
-            "   - 3: Fair\n"
-            "   - 2: Poor\n"
-            "   - 1: Very Poor\n\n"
-            "- **KitchenQual**: Kitchen quality\n"
-            "   - Ex: Excellent\n"
-            "   - Gd: Good\n"
-            "   - TA: Typical/Average\n"
-            "   - Fa: Fair\n"
-            "   - Po: Poor\n\n"
-        )
+
+
     

@@ -10,14 +10,14 @@ from app_pages.price_prediction import price_prediction_page_body
 from app_pages.machine_learning import machine_learning_page_body
 
 
-app = MultiPage(app_name= "Heritage House") #App Name
+app = MultiPage(app_name= "Heritage House Project :house:") #App Name
 
 # Add your app pages here using .add_page()
-app.add_page("Summary", summary_page_body)
-app.add_page("Hypothesis", hypothesis_page_body)
-app.add_page("Correlation Analysis", correlation_page_body)
-app.add_page("House Price Prediction", price_prediction_page_body)
-app.add_page("Machine Learning Model", machine_learning_page_body)
+app.add_page("Summary :house:", summary_page_body)
+app.add_page("Hypothesis :pencil:", hypothesis_page_body)
+app.add_page("Correlation Analysis :bar_chart:", correlation_page_body)
+app.add_page("House Price Prediction :moneybag:", price_prediction_page_body)
+app.add_page("Machine Learning Model :robot_face:", machine_learning_page_body)
 
 
 # Run the  app
