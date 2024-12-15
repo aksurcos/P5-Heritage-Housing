@@ -42,7 +42,7 @@ def machine_learning_page_body():
     The scatter plots demonstrate the relationship between actual and predicted house prices 
     for both training and test datasets. The red diagonal line represents perfect predictions.
     """)
-    predictions = plt.imread('/workspace/P5-Heritage-Housing/outputs/study/predictions.png')
+    predictions = plt.imread('outputs/study/predictions.png')
     st.image(predictions)
     st.write("""
     **Key Observations:**

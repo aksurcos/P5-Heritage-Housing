@@ -6,11 +6,11 @@ import joblib
 
 @st.cache_resource
 def housing_data():
-    df = pd.read_csv("/workspace/P5-Heritage-Housing/outputs/datasets/collection/cleaned/CleanedHousePrices.csv")
+    df = pd.read_csv("outputs/datasets/collection/cleaned/CleanedHousePrices.csv")
     return df
 
 def inherited_house_data():
-    in_df = pd.read_csv("/workspace/P5-Heritage-Housing/outputs/datasets/collection/inherited_houses.csv")
+    in_df = pd.read_csv("outputs/datasets/collection/inherited_houses.csv")
     return in_df
 
 def load_pkl_file(file_path):

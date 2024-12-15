@@ -11,12 +11,12 @@ def correlation_page_body():
     st.write(df.head(10))
     st.write("### Pearson & Spearman Correlation Plots")
     st.write("#### Pearson")
-    pearson = plt.imread('/outputs/study/pearson.png')
+    pearson = plt.imread('outputs/study/pearson.png')
     st.image(pearson)
     
     
     st.write("#### Spearman")
-    spearman = plt.imread('/outputs/study/spearman.png')
+    spearman = plt.imread('outputs/study/spearman.png')
     st.image(spearman)
     
 
