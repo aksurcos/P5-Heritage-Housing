@@ -30,6 +30,15 @@ def correlation_page_body():
         ]
     st.write("#### The correlation study shows that SalePrice has positive correlation with this variables:")
     st.write(positive_corr)
+    negative_corr = [
+            'KitchenQual_TA: Kitchen Quality Typical/Average', 
+            'GarageFinish_Unf: Garage is Unfinished',
+            'MasVnrArea_0.0: Masonry veneer area 0.0 in square feet',
+            'GarageYrBlt_Missing: Garage Year Built Missing',
+            'GarageFinish_None: Garage is Not finished'
+        ]
+    st.write("#### The correlation study shows that SalePrice has negative correlation with this variables:")
+    st.write(negative_corr)
     scatter = plt.imread('/workspace/P5-Heritage-Housing/outputs/study/scatter.png')
     st.image(scatter)
     st.write("#### What the scatterplot graph tells:\n"
@@ -41,15 +50,6 @@ def correlation_page_body():
         "- **6:** Year built (YearBuilt) shows that newer houses tend to have higher prices.\n"
     )
     
-    negative_corr = [
-        'KitchenQual_TA: Kitchen Quality Typical/Average', 
-        'GarageFinish_Unf: Garage is Unfinished',
-        'MasVnrArea_0.0: Masonry veneer area 0.0 in square feet',
-        'GarageYrBlt_Missing: Garage Year Built Missing',
-        'GarageFinish_None: Garage is Not finished'
-    ]
-    st.write("#### The correlation study shows that SalePrice has negative correlation with this variables:")
-    st.write(negative_corr)
 
     
 
