@@ -11,12 +11,12 @@ def correlation_page_body():
     st.write(df.head(10))
     st.write("### Pearson & Spearman Correlation Plots")
     st.write("#### Pearson")
-    pearson = plt.imread('/workspace/P5-Heritage-Housing/outputs/study/pearson.png')
+    pearson = plt.imread('/outputs/study/pearson.png')
     st.image(pearson)
     
     
     st.write("#### Spearman")
-    spearman = plt.imread('/workspace/P5-Heritage-Housing/outputs/study/spearman.png')
+    spearman = plt.imread('/outputs/study/spearman.png')
     st.image(spearman)
     
 
@@ -40,7 +40,7 @@ def correlation_page_body():
     st.write("##### The correlation study shows that SalePrice has negative correlation with this variables:")
     st.write(negative_corr)
     st.write("#### Scatterplot Graph of Variables (which has positive correlation with SalePrice")
-    scatter = plt.imread('/workspace/P5-Heritage-Housing/outputs/study/scatter.png')
+    scatter = plt.imread('outputs/study/scatter.png')
     st.image(scatter)
     st.write("##### What the scatterplot graph tells:\n"
         "- **1:** We see that as First floor area expands, the price increases.\n"
