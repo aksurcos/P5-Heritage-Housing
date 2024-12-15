@@ -28,7 +28,7 @@ def correlation_page_body():
         'TotalBsmtSF: Total square feet of basement area', 
         'YearBuilt',
         ]
-    st.write("#### The correlation study shows that SalePrice has positive correlation with this variables:")
+    st.write("##### The correlation study shows that SalePrice has positive correlation with this variables:")
     st.write(positive_corr)
     negative_corr = [
             'KitchenQual_TA: Kitchen Quality Typical/Average', 
@@ -37,11 +37,12 @@ def correlation_page_body():
             'GarageYrBlt_Missing: Garage Year Built Missing',
             'GarageFinish_None: Garage is Not finished'
         ]
-    st.write("#### The correlation study shows that SalePrice has negative correlation with this variables:")
+    st.write("##### The correlation study shows that SalePrice has negative correlation with this variables:")
     st.write(negative_corr)
+    st.write("#### Scatterplot Graph of Variables (which has positive correlation with SalePrice")
     scatter = plt.imread('/workspace/P5-Heritage-Housing/outputs/study/scatter.png')
     st.image(scatter)
-    st.write("#### What the scatterplot graph tells:\n"
+    st.write("##### What the scatterplot graph tells:\n"
         "- **1:** We see that as First floor area expands, the price increases.\n"
         "- **2:** Sale price generally increases with garage area (GarageArea).\n"
         "- **3:** There's a strong positive relationship between living area (GrLivArea) and price.\n"
