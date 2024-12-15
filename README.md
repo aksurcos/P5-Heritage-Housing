@@ -2,7 +2,7 @@
 
 This is a basic, goal-driven Machine Learning Project to predict sale prices of houses in Ames, Iowa.
 
-* Click [here]("""""""""""""""""""""""""") to see live project.
+* Click [here](https://heritage-house-project-22b037843d16.herokuapp.com/) to see live project.
 
 ## Business Case
 
