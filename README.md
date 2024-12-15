@@ -1,46 +1,13 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Heritage Housing Project
 
-## Template Instructions
+This is a basic, goal-driven Machine Learning Project to predict sale prices of houses in Ames, Iowa.
 
-Welcome,
+* Click [here]("""""""""""""""""""""""""") to see live project.
 
-This is the Code Institute student template for the Heritage Housing project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+## Business Case
 
-You can safely delete the Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-2. Log into the cloud-based IDE with your GitHub account.
-
-3. On your Dashboard, click on the Create button
-
-4. Paste in the URL you copied from GitHub earlier
-
-5. Click Create
-
-6. Wait for the workspace to open. This can take a few minutes.
-
-7. Open a new terminal and `pip3 install -r requirements.txt`
-
-11. Open the jupyter_notebooks directory and click on the notebook you want to open.
-
-12. Click the kernel button and choose Python Environments.
-
-Note that the kernel says Python 3.8.18 as it inherits from the workspace so it will be Python-3.8.18 as installed by our template. To confirm this you can use `! python --version` in a notebook code cell.
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In your Cloud IDE, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with *Regenerate API Key*.
+* The client has supplied a dataset with house sale prices and other property attributes in order to accomplish prediction of sale prices. We aim to determine the best selling price for these residences as well as examine the ways in which particular property attributes affect their market worth.
+* Business Requirements section has more details about what we are aiming.
 
 ## Dataset Content
 
@@ -85,24 +52,114 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ## Hypothesis and how to validate?
 
-* List here your project hypothesis(es) and how you envision validating it (them).
+* Hypothesis 1: We suspect properties with greater Overall Quality will be priced higher.
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
+* Hypothesis 2: We suspect properties with larger spaces will be priced higher.
 
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+* Hypothesis 3: We suspect the more recent the year of construction, the higher the sale price tends to be.
 
-## ML Business Case
 
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+**Validation**
+
+ - 1. The first hypothesis argument is supported by the fact of correlation analysis that homes with greater Overall Quality typically have higher sale prices.
+ - 2. The correlation study between SalePrice and space variables supports this.
+ - 3. The correlation study between SalePrice and YearBuilt supports this.
+
+## The rationale to map the business requirements to the Data Visualizations and ML tasks
+
+### Business Requirement 1:
+
+- Study on the datasets and prepare a solid Pearson & Spearman Correlation report.
+
+- Visualize the correlation relation between SalePrice and others
+
+- Observe positive and negative correlated variables with SalePrice
+
+- Pick the highest correlated variables to use for more.
+
+### Business Requirement 2:
+
+- Create and deliver a ML model which is able to predict the sale price of the four inherited houses and any house in Ames, Iowa.
+
+- Conventional Machine Learning to map the relationships between the features and the target. This will be Involving:
+
+- Test and choose machine learning techniques to find the model that works best for project's requirements and our needs.
 
 ## Dashboard Design
 
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+### Summary 🏠
+
+- This page contains summarized information about the project, the client's requirements and explanation of variables.
+
+- "checkbox" to show all variables
+
+### Hypothesis 📝
+
+- This page contains 3 hypothesis that we suspect and validate for the project in "success" box.
+
+### Correlation Analysis 📊
+
+- This page has visualization of correlation study which is Pearson and Spearman and list showing positive and negative correlated variables.
+
+- "table" to display dataset's head() function.
+
+- "images" to show studied correlation graphs.
+
+
+### House Price Prediction 💰
+
+- This page contains estimated sale price of 4 houses that is required and interactive section to estimate any other house.
+
+- "cards" to display 4 houses' attributes and estimated sale prices.
+
+- "input widgets" to provide variables
+
+- "button" to predict
+
+
+### Machine Learning Model 🤖
+
+- This page contains chosen pipeline's information, feature importance plot and model performance metrics
+
+- "table" to show model performance petrics and comparison
+
+- "image" to show graph of actual vs predicted values analysis
+
+- "graph" to display feature importance analysis
+
+## Epics and Issues
+
+### Epics
+-Epic 1: Data Collection & Information Gathering
+-Epic 2: Data Inspection, Cleaning, and Preparation
+-Epic 3: Model Training, Optimization and Validation
+-Epic 4: Plan and Creation of Dashboard
+-Epic 5: Deployment
+
+#### Issues
+
+##### Issue in Data Collection & Information Gathering
+- Info and Data Collection
+
+##### Issues in Data Inspection, Cleaning, and Preparation
+- Data Inspection and Cleaning
+- Correlation Study and Visualization 
+
+##### Issues in Model Training, Optimization and Validation
+- Feature Engineering
+- Train Machine Learning Model
+- Optimize and Validate Model
+
+##### Issues in Plan and Creation of Dashboard
+- Plan and Creation of Dashboard
+- Develop and Test Dashboard 
+
+##### Issues in Deployment
+- Deployment
 
 ## Unfixed Bugs
 
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+* Not detected any.
 
 ## Deployment
 
@@ -121,26 +178,20 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ## Main Data Analysis and Machine Learning Libraries
 
-* Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
+   - Pandas
+   - Matplotlib for plots
+   - Seaborn for correlation study
+   - Feature Engine for imputation and encoders    
+   - Scikit-learn for ML Algorithms and Pipeline    
 
 ## Credits
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-* You can break the credits section up into Content and Media, depending on what you have included in your project.
+* Code Institute's Churnometer Walkthrough Project 
+* Custom Codes from LMS
 
-### Content
+## Acknowledgements
 
-* The text for the Home page was taken from Wikipedia Article A
-* Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-* The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-* The photos used on the home and sign-up page are from This Open Source site
-* The images used for the gallery page were taken from this other open-source site
-
-## Acknowledgements (optional)
-
-
-* In case you would like to thank the people that provided support through this project.
+* This was the hardest project that I've done, I felt like there are too many details to be considered, I believe it was because this project is my first data analysis project so that I've kept it little bit basic. Thank you who has understanding.
+* Thank you to all Code Institute students, especially to Slack Community.
+* I believe, it would be fair if I say that I needed to see some of old projects, thank you to all Predictive Analytics students.
 
