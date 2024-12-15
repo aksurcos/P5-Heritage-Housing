@@ -129,12 +129,14 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ## Epics and Issues
 
+- Click [here](https://github.com/users/aksurcos/projects/4) to see Kanban Board.
+
 ### Epics
--Epic 1: Data Collection & Information Gathering
--Epic 2: Data Inspection, Cleaning, and Preparation
--Epic 3: Model Training, Optimization and Validation
--Epic 4: Plan and Creation of Dashboard
--Epic 5: Deployment
+- Epic 1: Data Collection & Information Gathering
+- Epic 2: Data Inspection, Cleaning, and Preparation
+- Epic 3: Model Training, Optimization and Validation
+- Epic 4: Plan and Creation of Dashboard
+- Epic 5: Deployment
 
 #### Issues
 
