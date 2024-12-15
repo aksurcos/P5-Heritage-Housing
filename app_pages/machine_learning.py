@@ -9,7 +9,7 @@ def machine_learning_page_body():
     st.write("## Machine Learning Model Performance")
 
     st.write("### Model Comparison")
-    st.info("After testing 3 models, we've decided that regression without feature engineering model gave the best results after making comparisons. You can check the details below.")
+    st.info("After testing 3 models, we've decided that regression without feature engineering model gave the best results after making comparisons. You can check the details below and Jupyter Notebooks.")
 
     st.write("The regression without feature engineering model is better because: \n\n "
             "- More balanced performance between train and test sets \n\n"

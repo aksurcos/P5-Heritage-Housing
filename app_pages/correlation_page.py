@@ -1,6 +1,8 @@
 import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+import pandas as pd
 from src.data_management import housing_data
 
 def correlation_page_body():
@@ -11,9 +13,13 @@ def correlation_page_body():
     st.write("#### Pearson")
     pearson = plt.imread('/workspace/P5-Heritage-Housing/outputs/study/pearson.png')
     st.image(pearson)
+    
+    
     st.write("#### Spearman")
     spearman = plt.imread('/workspace/P5-Heritage-Housing/outputs/study/spearman.png')
     st.image(spearman)
+    
+
     positive_corr = [
         '1stFlrSF: First floor square feet', 
         'GarageArea', 
@@ -44,5 +50,8 @@ def correlation_page_body():
     ]
     st.write("#### The correlation study shows that SalePrice has negative correlation with this variables:")
     st.write(negative_corr)
+
+    
+
 
 
