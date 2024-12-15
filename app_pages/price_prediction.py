@@ -6,8 +6,8 @@ from src.machine_learning.prediction import predict_sale_price
 
 def price_prediction_page_body():
     
-    pipeline = load_pkl_file("/workspace/P5-Heritage-Housing/outputs/ml_pipeline/predict_SalePrice/v1/pipeline.pkl")
-    sale_price_features = (pd.read_csv(f"/workspace/P5-Heritage-Housing/outputs/ml_pipeline/predict_SalePrice/v1/X_train.csv").columns.to_list())
+    pipeline = load_pkl_file("outputs/ml_pipeline/predict_SalePrice/v1/pipeline.pkl")
+    sale_price_features = (pd.read_csv(f"outputs/ml_pipeline/predict_SalePrice/v1/X_train.csv").columns.to_list())
     st.write("#### Meet Requirement: Four Inherited Houses")
     st.info(
 		"The client is interested in predicting the house sale price"
